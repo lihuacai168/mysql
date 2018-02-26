@@ -1,0 +1,15 @@
+-- 创建employee表 
+CREATE TABLE employee (
+	id INT (10) NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+	employee_name VARCHAR (20) NOT NULL,
+	age INT (4),
+	hire_date date DEFAULT NULL,
+	department VARCHAR (20)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- 创建salary表 
+CREATE TABLE salary (
+	id INT (10) NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+	age INT (10)
+) ENGINE = INNODB DEFAULT CHARSET = utf8;

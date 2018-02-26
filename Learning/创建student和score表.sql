@@ -1,0 +1,16 @@
+-- 1.创建student和score表
+CREATE TABLE student (
+	id INT (10) NOT NULL UNIQUE PRIMARY KEY,
+	NAME VARCHAR (20) NOT NULL,
+	sex VARCHAR (4),
+	birth YEAR,
+	department VARCHAR (20),
+	address VARCHAR (50)
+) ENGINE = INNODB DEFAULT CHARSET = utf8;
+
+CREATE TABLE score (
+	id INT (10) NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+	stu_id INT (10) NOT NULL,
+	c_name VARCHAR (20),
+	grade INT (10)
+) ENGINE = INNODB DEFAULT CHARSET = utf8;
